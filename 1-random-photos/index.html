@@ -17,7 +17,7 @@
     <small v-if="errorMessage" class="errorMessage">{{ errorMessage }}</small>
     <button @click="getPhotos" class="btn">Get Photos</button>
 
-    <div class="gallery" v.if="photos.length > 0" >
+    <div class="gallery" :style="{display: photos.length > 0 ? 'grid' : 'none'}">
       <div v-for="photo in photos" :key="photo.id">
         <img :src="photo.urls.regular" :alt="photo.alt_description" />
         <p class="photo-author">Author: {{ photo.user.name || 'Unknown' }}</p>
