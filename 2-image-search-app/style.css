@@ -104,6 +104,11 @@ form {
   background-color: #0077b5;
 }
 
+img {
+  max-width: 800px;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .search-result {
     width: 45%;
